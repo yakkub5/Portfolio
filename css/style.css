@@ -1,0 +1,165 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+legend,
+p,
+li {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  color: #ffffff;
+}
+h1 {
+  font-size: 56px;
+}
+h2 {
+  font-size: 48px;
+}
+h3 {
+  font-size: 36px;
+}
+h4 {
+  font-size: 30px;
+}
+h5 {
+  font-size: 24px;
+}
+h6 {
+  font-size: 20px;
+}
+p {
+  font-size: 18px;
+}
+img {
+  max-width: 100%;
+}
+.highlight {
+  color: #d41454;
+}
+.container-fluid {
+  max-width: 1170px;
+}
+.row.without_padding {
+  padding: 0px;
+  margin: 0px;
+}
+.btn {
+  border: none;
+  border-radius: 0;
+  background: #d41454;
+  color: white;
+  outline: none;
+}
+.btn:hover,
+.btn:focus,
+.btn:active {
+  background: #eb306e;
+  color: white;
+  outline: none;
+}
+header {
+  min-height: 100vh;
+}
+header::after {
+  background-image: url("../img/bg_1.png");
+  background-repeat: no-repeat, no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  content: "";
+  opacity: 0.5;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+}
+header .navbar {
+  margin-top: 35px;
+  min-height: 80px;
+  border-bottom: none;
+}
+header .navbar li {
+  font-size: 15px;
+  margin: 20px 20px;
+}
+header .navbar li a {
+  color: black;
+  line-height: 40px;
+  text-shadow: 1px 1px 2px #969696;
+  padding: 0;
+  text-shadow: none;
+}
+header .navbar li a:focus,
+header .navbar li a:active,
+header .navbar li a:hover {
+  background: transparent;
+}
+header .navbar li .hover {
+  margin-top: 100px;
+  height: 3px;
+  width: 40px;
+  margin: 0 auto;
+  background: transparent;
+}
+header .navbar li.active {
+  color: #d41454;
+}
+header .navbar li.active .hover {
+  background-color: #d41454;
+}
+header .navbar li.active a {
+  color: #d41454;
+}
+header .main_heading {
+  top: 50%;
+  left: 50%;
+  margin-left: -700px;
+  margin-top: -56px;
+  position: absolute;
+}
+header h3 {
+  font-size: 48px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+header .btn-booster {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 30px;
+  min-width: 205px;
+  height: 65px;
+  padding-top: 2px;
+}
+main .about {
+  padding-top: 75px;
+  padding-bottom: 75px;
+  color: black;
+}
+main .work {
+  padding-top: 75px;
+  padding-bottom: 75px;
+  background: #d41454;
+}
+main .clients {
+  padding-top: 75px;
+  padding-bottom: 75px;
+  background: #d41454;
+}
+main .contact {
+  padding-top: 75px;
+  padding-bottom: 75px;
+  background: ;
+}
+/* Custom, iPhone Retina */
+/* Extra Small Devices, Phones */
+/* Small Devices, Tablets */
+/* Medium Devices, Desktops */
+/* Large Devices, Wide Screens */
+/* Large Devices, Wide Screens */
+/* Medium Devices, Desktops */
+/* Small Devices, Tablets */
+/* Extra Small Devices, Phones */
+/* Custom, iPhone Retina */

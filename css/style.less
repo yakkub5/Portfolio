@@ -1,0 +1,242 @@
+@montserrat: 'Montserrat', sans-serif;
+@open-sans: 'Open Sans', sans-serif;
+
+@bg: #1b315f;
+@pink: #d41454;
+@white: #fff;
+
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+legend,
+p,
+li {
+    font-family: @open-sans;
+    font-weight: 400;
+	color: @white;
+}
+h1{
+	font-size: 56px;
+}
+h2{
+	font-size: 48px;
+}
+h3{
+	font-size: 36px;
+}
+h4{
+	font-size: 30px;
+}
+h5{
+	font-size: 24px;
+}
+h6{
+	font-size: 20px;
+}
+p{
+	font-size: 18px;
+}
+img{
+	max-width: 100%;
+}
+.highlight{
+	color: @pink;
+}
+.container-fluid{
+	max-width: 1170px;
+}
+.row{
+	&.without_padding{
+		padding: 0px;
+		margin: 0px;
+	}
+}
+
+.btn{
+	border: none;
+	border-radius: 0;
+	background: @pink;
+	color: white;
+	outline: none;
+	&:hover,
+	&:focus,
+	&:active{
+		background: lighten(@pink, 10%);
+		color: white;
+		outline: none;
+	}
+}
+header{
+	
+	min-height: 100vh;
+	&::after{
+		background-image: url("../img/bg_1.png");
+		background-repeat  : no-repeat, no-repeat;
+		background-attachment: fixed;
+		background-size: cover;
+		background-position: center;
+		content: "";
+		opacity: 0.5;
+		top: 0;
+		left: 0;
+		bottom: 0;
+		right: 0;
+		position: absolute;
+		z-index: -1;   
+	}
+	.navbar{
+		margin-top: 35px;
+		min-height: 80px;
+		border-bottom: none;
+		li{
+			font-size: 15px;
+			margin: 20px 20px;
+			a{
+				color: black;
+				line-height: 40px;
+				text-shadow: 1px 1px 2px rgba(150, 150, 150, 1);
+				padding: 0;
+				text-shadow:none;
+				&:focus,
+				&:active,
+				&:hover{
+					background: transparent;
+				}
+			}
+			.hover{
+				margin-top: 100px;
+				height: 3px;
+				width: 40px;
+				margin: 0 auto;
+				background: transparent;
+			}
+			&.active{
+				color: @pink;
+				.hover{
+					background-color: @pink;
+				}
+				a{
+					color: @pink;
+				}
+			}
+		}
+	}
+	.main_heading{
+		top: 50%;
+		left: 50%;
+		margin-left: -700px;
+		margin-top: -56px;
+		position: absolute;
+	}
+	h3{
+		font-size: 48px;
+		line-height: 1.5;
+		margin-bottom: 20px;
+	}
+	.btn-booster{
+		font-family: @montserrat;
+		font-size: 30px;
+		min-width: 205px;
+		height: 65px;
+		padding-top: 2px;
+	}
+}
+main{
+	.about{
+		padding-top: 75px;
+		padding-bottom: 75px;
+		color: black;
+
+	}
+	.work{
+		padding-top: 75px;
+		padding-bottom: 75px;
+		background: @pink;
+	}
+	.clients{
+		padding-top: 75px;
+		padding-bottom: 75px;
+		background: @pink;
+	}
+	.contact{
+		padding-top: 75px;
+		padding-bottom: 75px;
+		background: ;
+	}
+}
+footer{
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* Custom, iPhone Retina */ 
+@media only screen and (min-width : 320px) {
+    
+}
+
+/* Extra Small Devices, Phones */ 
+@media only screen and (min-width : 480px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+
+}
+
+@media only screen and (min-width : 1200px) {
+
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1500px) {
+
+}
+
+@media only screen and (min-width : 2300px) {
+	
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+	
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+
+}
+
+/* Extra Small Devices, Phones */ 
+@media only screen and (max-width : 480px) {
+
+}
+
+/* Custom, iPhone Retina */ 
+@media only screen and (max-width : 320px) {
+    
+}
