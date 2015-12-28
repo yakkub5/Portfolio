@@ -1,0 +1,129 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+    "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Jakub Kolar</title>
+    <link rel="shortcut icon" href="img/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+            
+    <meta property="og:image" content="http://booster.vc/img/bg_contact.png") />
+    <script src="http://maps.googleapis.com/maps/api/js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700|Open+Sans:400,700,300' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <div class="container-fluid">
+            <div class="row">
+                <nav class="navbar">
+                    <div class="navbar-header">
+                      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                      </button>
+                      <a class="navbar-brand" href=""><img src="img/logo.png" alt="Booster logo."></a>
+                    </div>
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                      <ul class="nav navbar-nav navbar-right">
+                        <li><a href="#about">About me</a></li>
+                        <li><a href="#work">My latest work</a></li>
+                        <li><a href="#clients">Clients</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                      </ul>
+                    </div>
+                </nav>
+                <div class="col-xs-12 text-center main_heading">
+                    <h3>
+                        Hi there, I'm <span class="highlight">Jacob</span>
+                    </h3>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="about" id="about">
+            <div class="container-fluid">
+                <div class="row text-center">
+                    <h4 class="heading">
+                        About me
+                    </h4>
+                    <div class="col-md-5 col-md-offset-1">
+                        Lorem Ipsum je fiktívny text, používaný pri návrhu tlačovín a typografie. Lorem Ipsum je štandardným výplňovým textom už od 16. storočia, keď neznámy tlačiar zobral sadzobnicu plnú tlačových znakov a pomiešal ich, aby tak vytvoril vzorkovú knihu. Prežil nielen päť storočí, ale aj skok do elektronickej sadzby, a pritom zostal v podstate nezmenený. Spopularizovaný bol v 60-tych rokoch 20.storočia, vydaním hárkov Letraset, ktoré obsahovali pasáže Lorem Ipsum, a neskôr aj publikačným softvérom ako Aldus PageMaker, ktorý obsahoval verzie Lorem Ipsum.
+                    </div>
+                    <div class="col-md-5"></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="work" id="work">
+            <div class="container-fluid">
+                <div class="row text-center">
+                    <h4 class="heading">
+                        My latest work
+                    </h4>
+                    
+                </div>
+            </div>
+        </section>
+
+        <section class="clients" id="clients"> 
+            <div class="container-fluid">
+                <div class="row text-center">
+                    <h4 class="heading">
+                        Clients
+                    </h4>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="contact" id="contact">
+            <div class="container-fluid">
+                <div class="row text-center">
+                    <h4 class="heading">
+                        Contact
+                    </h4>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container-fluid">
+            <div class="row text-center">
+                <p>Copyright 2015 © Booster, Designed with fantasy by <a target="_blank" href="http://www.principiomsd.com/">Principio MSD</a></p>  
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+    
+    <script>
+
+        $(function() {
+          $('a[href*=#]:not([href=#])').click(function() {
+            if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+              var target = $(this.hash);
+              target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+              if (target.length) {
+                $('html,body').animate({
+                  scrollTop: target.offset().top
+                }, 1000);
+                return false;
+              }
+            }
+          });
+        });
+
+    </script>
+</body>
+</html>
