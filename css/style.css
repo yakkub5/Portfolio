@@ -66,7 +66,7 @@ header {
   min-height: 100vh;
 }
 header::after {
-  background-image: url("../img/header_2.png");
+  background-image: url("../img/header_1.png");
   background-repeat: no-repeat, no-repeat;
   background-size: cover;
   background-position: center;
@@ -78,6 +78,18 @@ header::after {
   right: 0;
   position: absolute;
   z-index: -1;
+}
+header::before {
+  background-color: #2c3e50;
+  background-position: center;
+  content: "";
+  opacity: 0.6;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: 0;
 }
 header .navbar {
   margin-top: 35px;
@@ -109,13 +121,14 @@ header .main_heading {
 }
 main .about {
   position: relative;
+  background-color: #ecf0f1;
 }
 main .about .triangle-left {
   width: 100%;
   height: 0;
   border-style: solid;
   border-width: 170px 0 0 1400px;
-  border-color: transparent transparent transparent #fff;
+  border-color: transparent transparent transparent #ecf0f1;
   position: absolute;
   top: -170px;
   right: 0;
@@ -125,7 +138,7 @@ main .about .triangle-right {
   height: 0;
   border-style: solid;
   border-width: 0 1400px 170px 0;
-  border-color: transparent #fff transparent transparent;
+  border-color: transparent #ecf0f1 transparent transparent;
   position: absolute;
   bottom: -170px;
   right: 0;
@@ -162,11 +175,13 @@ main .work .triangle-right {
   position: absolute;
   bottom: -170px;
   right: 0;
+  z-index: 1;
 }
 main .contact {
   padding-top: 170px;
   padding-bottom: 170px;
   position: relative;
+  background-color: #ecf0f1;
   color: #000000;
 }
 main .contact h2 {
@@ -175,6 +190,44 @@ main .contact h2 {
 }
 main .contact p {
   color: #000000;
+}
+main .contact .input-form {
+  margin-top: 45px;
+  margin-bottom: 0px;
+}
+main .contact .input-form input,
+main .contact .input-form textarea {
+  width: 100%;
+  max-width: 100%;
+  min-height: 51px;
+  border-radius: 3px;
+  border: 2px solid #2c3e50;
+  outline: none;
+  margin-bottom: 15px;
+  padding: 10px 20px;
+  font-size: 20px;
+  font-family: 'Open Sans', sans-serif;
+}
+main .contact .input-form textarea {
+  min-height: 150px;
+}
+main .contact .input-form button {
+  width: 200px;
+  height: 50px;
+  padding: 10px 20px;
+  border-radius: 3px;
+  color: #ecf0f1;
+  float: left;
+  background: #2c3e50;
+  outline: none;
+  border: none;
+  font-size: 18px;
+  font-family: 'Open Sans', sans-serif;
+}
+main .contact .input-form button:hover,
+main .contact .input-form button:focus,
+main .contact .input-form button:active {
+  background: #1a242f;
 }
 main .contact .triangle-right-reverse {
   width: 100%;
@@ -193,8 +246,61 @@ footer p {
   color: #ecf0f1;
   font-size: 14px;
 }
-footer p a {
+footer .icons {
+  margin-top: 75px;
+}
+footer a {
   color: #ecf0f1;
+}
+footer a:hover,
+footer a:focus,
+footer a:active {
+  color: #cfd9db;
+  text-decoration: none;
+}
+footer a .fa {
+  font-size: 45px;
+  position: absolute;
+}
+footer a .fa.fa-twitter {
+  bottom: 40px;
+}
+footer a .fa.fa-twitter:hover,
+footer a .fa.fa-twitter:focus,
+footer a .fa.fa-twitter:active {
+  color: #55acee;
+}
+footer a .fa.fa-medium {
+  bottom: 60px;
+}
+footer a .fa.fa-medium:hover,
+footer a .fa.fa-medium:focus,
+footer a .fa.fa-medium:active {
+  color: #00ab6b;
+}
+footer a .fa.fa-facebook-official {
+  bottom: 100px;
+}
+footer a .fa.fa-facebook-official:hover,
+footer a .fa.fa-facebook-official:focus,
+footer a .fa.fa-facebook-official:active {
+  color: #3b5998;
+}
+footer a .fa.fa-instagram {
+  bottom: 80px;
+}
+footer a .fa.fa-instagram:hover,
+footer a .fa.fa-instagram:focus,
+footer a .fa.fa-instagram:active {
+  color: #0d3c5f;
+}
+footer a .fa.fa-github {
+  bottom: 20px;
+}
+footer a .fa.fa-github:hover,
+footer a .fa.fa-github:focus,
+footer a .fa.fa-github:active {
+  color: #333;
 }
 /* Custom, iPhone Retina */
 /* Extra Small Devices, Phones */
