@@ -8,11 +8,13 @@
         <meta charset="UTF-8">
         <title>Portfolio | Jakub Kolar</title>
         
+        <link rel="shortcut icon" href="img/favicon.ico" />
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
         <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,300|Montserrat:400,700' rel='stylesheet' type='text/css'>
         <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
         <script src="//cdn.jsdelivr.net/vivus/latest/vivus.min.js"></script>
+        <link rel="stylesheet" href="css/animate.css">
         <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -74,8 +76,84 @@
             <div class="container-fluid">
                 <div class="row text-center">
                     <h2>
-                        My latest work
+                        My latest projects
                     </h2>
+                </div>
+                <div class="row text-center">
+                    <div class="col-sm-6">
+                        <a href="http://booster.vc" target="_blank">
+                            <div class="box animated lg" style="background-image:url('img/work_6.png')">
+                                <img src="img/work_6.png" height="100%;" alt="">
+                                <div class="description text-left"></div>
+                                <div class="text text-left">
+                                    <p>Booster.vc</p>
+                                    <p>Development</p>
+                                </div>
+                            </div>
+                        </a>
+                        </a>
+                    </div>
+                    <div class="col-sm-3">
+                        <a href="https://www.cloudo.co/account/contact/" target="_blank">
+                            <div class="box animated" style="background-image:url('img/work_2.png')">
+                                <img src="img/work_2.png" height="100%;" alt="">
+                                <div class="description"></div>
+                                <div class="text text-left">
+                                    <p>Cloudo | Contact</p>
+                                    <p>Development + Desing</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-sm-3">
+                        <a href="https://www.cloudo.co/" target="_blank">
+                            <div class="box animated" style="background-image:url('img/work_3.png')">
+                                <img src="img/work_3.png" height="100%;" alt="">
+                                <div class="description"></div>
+                                <div class="text text-left">
+                                    <p>Cloudo</p>
+                                    <p>Development</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-sm-3">
+                        <a href="https://www.cloudo.co/account/settings/" target="_blank">
+                            <div class="box animated" style="background-image:url('img/work_4.png')">
+                                <img src="img/work_4.png" height="100%;" alt="">
+                                <div class="description"></div>
+                                <div class="text text-left">
+                                    <p>Cloudo | Settings</p>
+                                    <p>Development + Desing</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-sm-3">
+                        <a href="https://www.cloudo.co/plans/" target="_blank">
+                            <div class="box animated" style="background-image:url('img/work_1.png')">
+                                <img src="img/work_5.png" height="100%;" alt="">
+                                <div class="description"></div>
+                                <div class="text text-left">
+                                    <p>Cloudo | Plans</p>
+                                    <p>Development</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-sm-12">
+                        <a href="http://yakkub5.github.io/Brushed/" target="_blank">
+                            <div class="box animated long" style="background-image:url('img/work_5.png')">
+                                <img src="img/work_1.png" height="100%;" width="100%" alt="">
+                                <div class="description"></div>
+                                <div class="text text-left">
+                                    <p>Brushed</p>
+                                    <p>Lerning effects</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    
                 </div>
             </div>
             <div class="triangle-right"></div>
@@ -140,6 +218,16 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
     
     <script>
+
+        $(document).ready(function(){
+            $( ".box" ).hover(function() {
+                $(this).addClass("infinite pulse");
+            },
+            function() {
+                $(this).removeClass("infinite pulse");
+            }
+            );
+        });
 
         $(function() {
           $('a[href*=#]:not([href=#])').click(function() {

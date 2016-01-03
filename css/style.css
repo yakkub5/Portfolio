@@ -66,7 +66,7 @@ header {
   min-height: 100vh;
 }
 header::after {
-  background-image: url("../img/header_1.png");
+  background-image: url("../img/header_2.png");
   background-repeat: no-repeat, no-repeat;
   background-size: cover;
   background-position: center;
@@ -149,12 +149,12 @@ main .transition {
   background-attachment: fixed;
   background-size: cover;
   background-position: center;
-  height: 65vh;
+  height: 80vh;
 }
 main .work {
-  height: 100vh;
   background: #2c3e50;
   position: relative;
+  padding-bottom: 45px;
 }
 main .work .triangle-left {
   width: 100%;
@@ -164,6 +164,78 @@ main .work .triangle-left {
   border-color: transparent transparent transparent #2c3e50;
   position: absolute;
   top: -170px;
+  right: 0;
+}
+main .work .container-fluid h2 {
+  margin-bottom: 55px;
+}
+main .work .container-fluid .box {
+  background: #ecf0f1;
+  height: 270px;
+  width: 100%;
+  margin-bottom: 30px;
+  display: inline-block;
+  vertical-align: top;
+  background-size: cover;
+  background-position: 50% 50%;
+  cursor: pointer;
+  border: none;
+}
+main .work .container-fluid .box .description,
+main .work .container-fluid .box .text {
+  display: none;
+}
+main .work .container-fluid .box.pulse .description {
+  max-width: 100%;
+  display: block;
+  border-style: solid;
+  border-width: 140px 0 0 300px;
+  border-color: transparent transparent transparent #2c3e50;
+  position: absolute;
+  opacity: 0.9;
+  bottom: -1px;
+  left: 0;
+}
+main .work .container-fluid .box.pulse .text {
+  display: block;
+  position: absolute;
+  left: 15px;
+  bottom: 5px;
+}
+main .work .container-fluid .box.pulse .text p {
+  font-size: 14px;
+}
+main .work .container-fluid .box img {
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  /* OLD IE */
+  zoom: 1;
+  filter: alpha(opacity=0);
+}
+main .work .container-fluid .box.lg {
+  height: 570px;
+}
+main .work .container-fluid .box.lg .description {
+  border-width: 150px 0 0 600px;
+}
+main .work .container-fluid .box.lg .text p {
+  font-size: 18px;
+}
+main .work .container-fluid .box.long .description {
+  border-width: 150px 0 0 1200px;
+}
+main .work .container-fluid .box.long .text p {
+  font-size: 18px;
+}
+main .work .container-fluid .box:after {
+  width: 100%;
+  height: 0;
+  border-style: solid;
+  border-width: 0 1400px 170px 0;
+  border-color: transparent #ecf0f1 transparent transparent;
+  position: absolute;
+  bottom: -170px;
   right: 0;
 }
 main .work .triangle-right {
