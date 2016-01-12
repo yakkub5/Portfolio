@@ -23,27 +23,18 @@
         <div class="container-fluid">
             <div class="row">
                 <nav class="navbar">
-                    <div class="navbar-header">
-                      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                      </button>
                       <a class="navbar-brand" href=""><img src="img/logo_reverse.png" alt="Jakub Kolar logo."></a>
                     </div>
-                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                      <ul class="nav navbar-nav navbar-right">
-                        <li><a href="#about">About me</a></li>
-                        <li><a href="#work">My latest projects</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                      </ul>
-                    </div>
+                    <img src="img/arrow.png" alt="">
                 </nav>
                 <div class="col-xs-12 text-center main_heading">
+                    <h1 class="hidden">Portfolio | Jakub Kolar</h1>
                     <h1>
-                        Hi there, I'm Jacob
+                        Front-end Developer
                     </h1>
+                    <p>
+                        Working hard to make internet awesome
+                    </p>
                 </div>
             </div>
         </div>
@@ -165,21 +156,14 @@
                     <h2>
                         Get in touch
                     </h2>
-                    <p>
+                    <p class="col-sm-6 col-sm-offset-3">
                         Got a project you would like me to work on? Or how about just a friendly chat? Give me an email and we can grab a lovely brew.
                     </p>
-                    <div class="input-form">
-                        <div class="col-md-3 col-md-offset-3">
-                            <input type="text" placeholder="Name">
-                        </div>
-                        <div class="col-md-3">
-                            <input type="text" placeholder="Email">
-                        </div>
-                        <div class="col-md-6 col-md-offset-3">
-                            <textarea name="" placeholder="Message" id=""></textarea>
-                        </div>
-                        <div class="col-md-3 col-md-offset-3">
-                            <button>SUBMIT</button>
+                    <div class="input-form text-center">
+                        <div class="col-sm-12">
+                            <a href="mailto:kubo.kolar@gmail.com">
+                                <button>SEND AN EMAIL</button>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -191,19 +175,19 @@
         <div class="container-fluid">
             <div class="row text-center">
                 <div class="icons">
-                    <a target="_blank" href="https://github.com/yakkub5" class="col-sm-2 col-sm-offset-1">
+                    <a target="_blank" href="https://github.com/yakkub5" class="col-xs-2 col-xs-offset-1">
                         <i class="fa fa-github"></i>
                     </a>
-                    <a target="_blank" href="https://twitter.com/yakubkolar" class="col-sm-2 ">
+                    <a target="_blank" href="https://twitter.com/yakubkolar" class="col-xs-2 ">
                         <i class="fa fa-twitter"></i>
                     </a>
-                    <a target="_blank" href="https://medium.com/@jakubkolar" class="col-sm-2 ">
+                    <a target="_blank" href="https://medium.com/@jakubkolar" class="col-xs-2 ">
                         <i class="fa fa-medium"></i>
                     </a>
-                    <a target="_blank" href="https://www.instagram.com/yakubkolar/" class="col-sm-2 ">
+                    <a target="_blank" href="https://www.instagram.com/yakubkolar/" class="col-xs-2 ">
                         <i class="fa fa-instagram"></i>
                     </a>
-                    <a target="_blank" href="https://www.facebook.com/kolar.yakub" class="col-sm-2 ">
+                    <a target="_blank" href="https://www.facebook.com/kolar.yakub" class="col-xs-2 ">
                         <i class="fa fa-facebook-official"></i>
                     </a>
                 </div>
@@ -243,6 +227,16 @@
             }
           });
         });
+
+
+        // Google analytics
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-72312664-1', 'auto');
+        ga('send', 'pageview');
 
     </script>
 </body>
