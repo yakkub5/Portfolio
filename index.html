@@ -262,8 +262,7 @@
                 $('html,body').animate({
                   scrollTop: target.offset().top
                 }, 1000);
-                $(".overlay").fadeOut("slow");
-                $("#nav-icon").removeClass("open");
+                $("#nav-icon").trigger( "click" );
                 return false;
               }
             }
