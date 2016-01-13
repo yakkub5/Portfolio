@@ -35,7 +35,7 @@
                     <h1>
                         Front-end Developer
                     </h1>
-                    <p>
+                    <p class="subheading">
                         Working hard to make internet awesome
                     </p>
                 </div>
@@ -164,7 +164,7 @@
                     </p>
                     <div class="input-form text-center">
                         <div class="col-sm-12">
-                            <a href="mailto:kubo.kolar@gmail.com">
+                            <a href="mailto:kubo.kolar@gmail.com" title="kubo.kolar@gmail.com">
                                 <button>SEND AN EMAIL</button>
                             </a>
                         </div>
@@ -178,19 +178,19 @@
         <div class="container-fluid">
             <div class="row text-center">
                 <div class="icons">
-                    <a target="_blank" href="https://github.com/yakkub5" class="col-xs-2 col-xs-offset-1">
+                    <a title="GitHub | yakkub5" target="_blank" href="https://github.com/yakkub5" class="col-xs-2 col-xs-offset-1">
                         <i class="fa fa-github"></i>
                     </a>
-                    <a target="_blank" href="https://twitter.com/yakubkolar" class="col-xs-2 ">
+                    <a title="Twitter | @yakubkolar" target="_blank" href="https://twitter.com/yakubkolar" class="col-xs-2 ">
                         <i class="fa fa-twitter"></i>
                     </a>
-                    <a target="_blank" href="https://medium.com/@jakubkolar" class="col-xs-2 ">
+                    <a title="Medium | @jakubkolar" target="_blank" href="https://medium.com/@jakubkolar" class="col-xs-2 ">
                         <i class="fa fa-medium"></i>
                     </a>
-                    <a target="_blank" href="https://www.instagram.com/yakubkolar/" class="col-xs-2 ">
+                    <a title="Instagram | yakubkolar" target="_blank" href="https://www.instagram.com/yakubkolar/" class="col-xs-2 ">
                         <i class="fa fa-instagram"></i>
                     </a>
-                    <a target="_blank" href="https://www.facebook.com/kolar.yakub" class="col-xs-2 ">
+                    <a title="Facebook | Jakub Kolar" target="_blank" href="https://www.facebook.com/kolar.yakub" class="col-xs-2 ">
                         <i class="fa fa-facebook-official"></i>
                     </a>
                 </div>
@@ -201,7 +201,7 @@
         </div>
     </footer>
 
-    <div class="overlay">
+    <div class="overlay" style="display:none">
         <ul>
             <li><a href="#welcome">Welcome</a></li>
             <li><a href="#about">About</a></li>
@@ -239,7 +239,6 @@
             };
         }(jQuery));
 
-        $(".overlay").hide();
 
         $('#nav-icon, .overlay li a').clickToggle(function() {   
             $("#nav-icon").addClass("open");
