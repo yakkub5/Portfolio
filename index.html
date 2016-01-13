@@ -13,19 +13,22 @@
         <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,300|Montserrat:400,700' rel='stylesheet' type='text/css'>
         <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-        <script src="//cdn.jsdelivr.net/vivus/latest/vivus.min.js"></script>
         <link rel="stylesheet" href="css/animate.css">
         <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-    <header>
+    <header id="welcome">
         <div class="container-fluid">
             <div class="row">
                 <nav class="navbar">
-                      <a class="navbar-brand" href=""><img src="img/logo_reverse.png" alt="Jakub Kolar logo."></a>
+                    <a class="navbar-brand" href=""><img src="img/logo_reverse.png" alt="Jakub Kolar logo."></a>
+                    <div class="pull-right" id="nav-icon">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
                     </div>
-                    <img src="img/arrow.png" alt="">
                 </nav>
                 <div class="col-xs-12 text-center main_heading">
                     <h1 class="hidden">Portfolio | Jakub Kolar</h1>
@@ -198,6 +201,15 @@
         </div>
     </footer>
 
+    <div class="overlay">
+        <ul>
+            <li><a href="#welcome">Welcome</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#work">My latest projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
     
@@ -213,6 +225,34 @@
             );
         });
 
+        (function($) {
+            $.fn.clickToggle = function(func1, func2) {
+                var funcs = [func1, func2];
+                this.data('toggleclicked', 0);
+                this.click(function() {
+                    var data = $(this).data();
+                    var tc = data.toggleclicked;
+                    $.proxy(funcs[tc], this)();
+                    data.toggleclicked = (tc + 1) % 2;
+                });
+                return this;
+            };
+        }(jQuery));
+
+        $(".overlay").hide();
+
+        $('#nav-icon, .overlay li a').clickToggle(function() {   
+            $("#nav-icon").addClass("open");
+            $(".overlay").show();
+            $(".overlay").removeClass("animated flipOutX");
+            $(".overlay").addClass("animated flipInX");
+        },
+        function() {
+            $("#nav-icon").removeClass("open");
+            $(".overlay").removeClass("animated flipInX");
+            $(".overlay").addClass("animated flipOutX");
+        });
+
         $(function() {
           $('a[href*=#]:not([href=#])').click(function() {
             if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
@@ -222,6 +262,8 @@
                 $('html,body').animate({
                   scrollTop: target.offset().top
                 }, 1000);
+                $(".overlay").fadeOut("slow");
+                $("#nav-icon").removeClass("open");
                 return false;
               }
             }

@@ -62,8 +62,41 @@ img {
   color: white;
   outline: none;
 }
+.overlay {
+  background: #d35400;
+  opacity: 0.9;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+}
+.overlay ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  list-style-type: none;
+}
+.overlay ul a {
+  font-size: 48px;
+  line-height: 1.7;
+  color: #ecf0f1;
+}
+.overlay ul a:focus {
+  text-decoration: none;
+}
+.overlay header #nav-icon {
+  position: absolute;
+}
 header {
   min-height: 100vh;
+  /* Icon */
 }
 header::after {
   background-image: url("../img/header_2.png");
@@ -117,6 +150,75 @@ header .main_heading {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+header .navbar-brand img {
+  z-index: 100;
+}
+header #nav-icon {
+  z-index: 100;
+  margin: 15px 15px;
+  width: 30px;
+  height: 24px;
+  position: relative;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: 0.5s ease-in-out;
+  -moz-transition: 0.5s ease-in-out;
+  -o-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+  cursor: pointer;
+}
+header #nav-icon span {
+  display: block;
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  background: #ecf0f1;
+  border-radius: 1px;
+  opacity: 1;
+  left: 0;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: 0.25s ease-in-out;
+  -moz-transition: 0.25s ease-in-out;
+  -o-transition: 0.25s ease-in-out;
+  transition: 0.25s ease-in-out;
+}
+header #nav-icon span:nth-child(1) {
+  top: 0px;
+}
+header #nav-icon span:nth-child(2),
+header #nav-icon span:nth-child(3) {
+  top: 9px;
+}
+header #nav-icon span:nth-child(4) {
+  top: 18px;
+}
+header #nav-icon.open span:nth-child(1) {
+  top: 18px;
+  width: 0%;
+  left: 50%;
+}
+header #nav-icon.open span:nth-child(2) {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+header #nav-icon.open span:nth-child(3) {
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+header #nav-icon.open span:nth-child(4) {
+  top: 18px;
+  width: 0%;
+  left: 50%;
 }
 main .about {
   position: relative;
