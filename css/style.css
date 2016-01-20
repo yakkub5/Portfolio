@@ -561,9 +561,214 @@ footer a .fa.fa-github:active {
 /* Extra Small Devices, Phones */
 /* Small Devices, Tablets */
 /* Medium Devices, Desktops */
+@media only screen and (min-width: 1200px) {
+  main .about .triangle-left {
+    border-width: 170px 0 0 1500px;
+  }
+  main .about .triangle-right {
+    border-width: 0 1500px 170px 0;
+  }
+  main .work .triangle-left {
+    border-width: 170px 0 0 1500px;
+  }
+  main .work .triangle-right {
+    border-width: 0 1500px 170px 0;
+  }
+  main .contact .triangle-right-reverse {
+    border-width: 0 0 170px 1500px;
+  }
+}
 /* Large Devices, Wide Screens */
+@media only screen and (min-width: 1500px) {
+  main .about .triangle-left {
+    border-width: 170px 0 0 2300px;
+  }
+  main .about .triangle-right {
+    border-width: 0 2300px 170px 0;
+  }
+  main .work .triangle-left {
+    border-width: 170px 0 0 2300px;
+  }
+  main .work .triangle-right {
+    border-width: 0 2300px 170px 0;
+  }
+  main .contact .triangle-right-reverse {
+    border-width: 0 0 170px 2300px;
+  }
+}
+@media only screen and (min-width: 2300px) {
+  main .about .triangle-left {
+    border-width: 170px 0 0 4000px;
+  }
+  main .about .triangle-right {
+    border-width: 0 4000px 170px 0;
+  }
+  main .work .triangle-left {
+    border-width: 170px 0 0 4000px;
+  }
+  main .work .triangle-right {
+    border-width: 0 4000px 170px 0;
+  }
+  main .contact .triangle-right-reverse {
+    border-width: 0 0 170px 4000px;
+  }
+}
 /* Large Devices, Wide Screens */
+@media only screen and (max-width: 1200px) {
+  main .about .triangle-left {
+    border-width: 170px 0 0 1200px;
+  }
+  main .about .triangle-right {
+    border-width: 0 1200px 170px 0;
+  }
+  main .work .triangle-left {
+    border-width: 170px 0 0 1200px;
+  }
+  main .work .triangle-right {
+    border-width: 0 1200px 170px 0;
+  }
+  main .contact .triangle-right-reverse {
+    border-width: 0 0 170px 1200px;
+  }
+}
 /* Medium Devices, Desktops */
+@media only screen and (max-width: 992px) {
+  header {
+    padding: 0px 15px;
+  }
+  header .main_heading h1 {
+    font-size: 48px;
+  }
+  header .main_heading .subheading {
+    font-size: 16px;
+    margin-left: 32%;
+  }
+  main .about {
+    padding-top: 45px;
+  }
+  main .about .skills .skill {
+    justify-content: center;
+  }
+  main .work .container-fluid h2 {
+    margin-bottom: 75px;
+  }
+  main .work .container-fluid .box.pulse .description {
+    border-width: 125px 0 0 220px;
+  }
+  main .work .container-fluid .box.pulse .text p {
+    font-size: 12px;
+  }
+}
 /* Small Devices, Tablets */
+@media only screen and (max-width: 768px) {
+  .overlay ul {
+    padding: 0;
+  }
+  .overlay ul a {
+    font-size: 36px;
+    line-height: 1.7;
+  }
+  .overlay header #nav-icon {
+    position: absolute;
+  }
+  header {
+    padding: 0px 15px;
+  }
+  header .main_heading h1 {
+    font-size: 40px;
+  }
+  header .main_heading .subheading {
+    font-size: 14px;
+    margin-left: 32%;
+  }
+  main .about {
+    padding-top: 45px;
+  }
+  main .about .skills .skill {
+    justify-content: center;
+  }
+  main .work .container-fluid h2 {
+    margin-bottom: 75px;
+  }
+  main .work .container-fluid .box.pulse .description {
+    border-width: 125px 0 0 270px;
+  }
+  main .work .container-fluid .box.pulse .text p {
+    font-size: 14px;
+  }
+}
 /* Extra Small Devices, Phones */
+@media only screen and (max-width: 480px) {
+  .overlay ul {
+    padding: 0;
+  }
+  .overlay ul a {
+    font-size: 30px;
+    line-height: 1.7;
+  }
+  .overlay header #nav-icon {
+    position: absolute;
+  }
+  header {
+    padding: 0px 15px;
+  }
+  header .main_heading h1 {
+    font-size: 30px;
+  }
+  header .main_heading .subheading {
+    font-size: 14px;
+    margin-left: 32%;
+  }
+  main .about {
+    padding-top: 45px;
+  }
+  main .about p {
+    font-size: 14px;
+  }
+  main .about .container-fluid .skills .skill .title {
+    font-size: 16px;
+  }
+  main .about .container-fluid .skills .skill .boxik {
+    width: 200px;
+  }
+  main .work {
+    padding-bottom: 0px;
+  }
+  main .work .container-fluid h2 {
+    margin-bottom: 75px;
+  }
+  main .work .container-fluid .box.pulse .description {
+    border-width: 125px 0 0 270px;
+  }
+  main .work .container-fluid .box.pulse .text p {
+    font-size: 14px;
+  }
+  main .contact {
+    padding-top: 220px;
+    padding-bottom: 175px;
+  }
+  footer .icons {
+    margin-top: 15px;
+    margin-bottom: 25px;
+    margin-left: 20px;
+  }
+  footer a .fa {
+    font-size: 45px;
+  }
+  footer a .fa.fa-twitter {
+    bottom: 35px;
+  }
+  footer a .fa.fa-medium {
+    bottom: 50px;
+  }
+  footer a .fa.fa-facebook-official {
+    bottom: 80px;
+  }
+  footer a .fa.fa-instagram {
+    bottom: 65px;
+  }
+  footer a .fa.fa-github {
+    bottom: 20px;
+  }
+}
 /* Custom, iPhone Retina */

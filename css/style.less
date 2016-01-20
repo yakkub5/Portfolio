@@ -648,36 +648,315 @@ footer{
 }
 
 @media only screen and (min-width : 1200px) {
+main{
+	.about{
+		.triangle-left{
+			border-width: 170px 0 0 1500px;
+		}	
+		.triangle-right{
+			border-width: 0 1500px 170px 0;
+		}	
 
+	}
+	.work{
+		.triangle-left{
+			border-width: 170px 0 0 1500px;
+		}	
+		.triangle-right{
+			border-width: 0 1500px 170px 0;
+		}	
+	}
+	.contact{
+		.triangle-right-reverse{
+			border-width: 0 0 170px 1500px;
+		}
+	}
+}
 }
 
 /* Large Devices, Wide Screens */
 @media only screen and (min-width : 1500px) {
+main{
+	.about{
+		.triangle-left{
+			border-width: 170px 0 0 2300px;
+		}	
+		.triangle-right{
+			border-width: 0 2300px 170px 0;
+		}	
 
+	}
+	.work{
+		.triangle-left{
+			border-width: 170px 0 0 2300px;
+		}	
+		.triangle-right{
+			border-width: 0 2300px 170px 0;
+		}	
+	}
+	.contact{
+		.triangle-right-reverse{
+			border-width: 0 0 170px 2300px;
+		}
+	}
+}
 }
 
 @media only screen and (min-width : 2300px) {
-	
+main{
+	.about{
+		.triangle-left{
+			border-width: 170px 0 0 4000px;
+		}	
+		.triangle-right{
+			border-width: 0 4000px 170px 0;
+		}	
+
+	}
+	.work{
+		.triangle-left{
+			border-width: 170px 0 0 4000px;
+		}	
+		.triangle-right{
+			border-width: 0 4000px 170px 0;
+		}	
+	}
+	.contact{
+		.triangle-right-reverse{
+			border-width: 0 0 170px 4000px;
+		}
+	}
+}
 }
 
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px) {
-	
+main{
+	.about{
+		.triangle-left{
+			border-width: 170px 0 0 1200px;
+		}	
+		.triangle-right{
+			border-width: 0 1200px 170px 0;
+		}	
+
+	}
+	.work{
+		.triangle-left{
+			border-width: 170px 0 0 1200px;
+		}	
+		.triangle-right{
+			border-width: 0 1200px 170px 0;
+		}	
+	}
+	.contact{
+		.triangle-right-reverse{
+			border-width: 0 0 170px 1200px;
+		}
+	}
+}
 }
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px) {
-
+header{
+	padding: 0px 15px;
+	.main_heading{
+		h1{
+			font-size: 48px;
+		}
+		.subheading{
+			font-size: 16px;
+			margin-left: 32%;
+		}
+	}
+}
+main{
+	.about{
+		padding-top: 45px;
+		.skills{
+			.skill{
+				justify-content:center;
+			}
+		}
+	}
+	.work{
+		.container-fluid{
+			h2{
+				margin-bottom: 75px;
+			}
+			.box{
+		        &.pulse{
+		        	.description{
+						border-width: 125px 0 0 220px;
+					}
+					.text{
+		        		p{
+		        			font-size: 12px;
+		        		}
+		        	}
+				}
+			}
+		}
+	}
+}
 }
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px) {
-
+.overlay{
+	ul{
+		padding:0;
+		a{
+			font-size: 36px;
+			line-height: 1.7;
+		}
+	}
+	header{
+		#nav-icon{
+			position: absolute;
+		}
+	}
+}
+header{
+	padding: 0px 15px;
+	.main_heading{
+		h1{
+			font-size: 40px;
+		}
+		.subheading{
+			font-size: 14px;
+			margin-left: 32%;
+		}
+	}
+}
+main{
+	.about{
+		padding-top: 45px;
+		.skills{
+			.skill{
+				justify-content:center;
+			}
+		}
+	}
+	.work{
+		.container-fluid{
+			h2{
+				margin-bottom: 75px;
+			}
+			.box{
+		        &.pulse{
+		        	.description{
+						border-width: 125px 0 0 270px;
+					}
+					.text{
+		        		p{
+		        			font-size: 14px;
+		        		}
+		        	}
+				}
+			}
+		}
+	}
+}
 }
 
 /* Extra Small Devices, Phones */ 
 @media only screen and (max-width : 480px) {
-
+.overlay{
+	ul{
+		padding:0;
+		a{
+			font-size: 30px;
+			line-height: 1.7;
+		}
+	}
+	header{
+		#nav-icon{
+			position: absolute;
+		}
+	}
+}
+header{
+	padding: 0px 15px;
+	.main_heading{
+		h1{
+			font-size: 30px;
+		}
+		.subheading{
+			font-size: 14px;
+			margin-left: 32%;
+		}
+	}
+}
+main{
+	.about{
+		padding-top: 45px;
+		p{
+			font-size: 14px;
+		}
+		.container-fluid .skills .skill .title {
+			font-size: 16px;	
+		}
+		.container-fluid .skills .skill .boxik {
+			width: 200px;
+		}
+	}
+	.work{
+		padding-bottom: 0px;
+		.container-fluid{
+			h2{
+				margin-bottom: 75px;
+			}
+			.box{
+		        &.pulse{
+		        	.description{
+						border-width: 125px 0 0 270px;
+					}
+					.text{
+		        		p{
+		        			font-size: 14px;
+		        		}
+		        	}
+				}
+			}
+		}
+	}
+	.contact{
+		padding-top: 220px;
+		padding-bottom: 175px;
+	}
+}
+footer{
+	.icons{
+		margin-top: 15px;
+		margin-bottom: 25px;
+		margin-left: 20px;
+	}
+	a{
+		.fa{
+			font-size: 45px;
+			&.fa-twitter{
+				bottom: 35px;
+			}
+			&.fa-medium{
+				bottom: 50px;
+				
+			}
+			&.fa-facebook-official{
+				bottom: 80px;
+				
+			}
+			&.fa-instagram{
+				bottom: 65px;
+				
+			}
+			&.fa-github{
+				bottom: 20px;
+			}
+		}
+	}
+}
 }
 
 /* Custom, iPhone Retina */ 
