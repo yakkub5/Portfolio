@@ -294,7 +294,7 @@ main .about .container-fluid .skills .skill .title {
   padding-top: 3px;
 }
 main .about .container-fluid .skills .skill .boxik {
-  width: 300px;
+  width: 350px;
 }
 main .about .container-fluid .skills .skill .boxik .progressbar {
   height: 23px;
@@ -343,12 +343,12 @@ main .about .container-fluid .skills .skill.js .boxik:active .progressbar:before
   content: "80%";
 }
 main .about .container-fluid .skills .skill.wd .boxik .progressbar {
-  width: 90%;
+  width: 80%;
 }
 main .about .container-fluid .skills .skill.wd .boxik:hover .progressbar:before,
 main .about .container-fluid .skills .skill.wd .boxik:focus .progressbar:before,
 main .about .container-fluid .skills .skill.wd .boxik:active .progressbar:before {
-  content: "90%";
+  content: "80%";
 }
 main .about .triangle-right {
   width: 100%;
