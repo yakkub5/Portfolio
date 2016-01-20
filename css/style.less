@@ -7,6 +7,8 @@
 @black: #000000;
 @blue-dark: #2c3e50;
 @orange: #d35400;
+@red-light: #e74c3c;
+@red-dark: #c0392b;
 
 
 h1,
@@ -65,6 +67,12 @@ img{
 	}
 }
 
+button{
+	-moz-transition: all 0.5s ease-in;
+    -webkit-transition: all 0.5s ease-in;
+    -o-transition: all 0.5s ease-in;
+    transition: all 0.5s ease-in;
+}
 .btn{
 	border: none;
 	border-radius: 0;
@@ -270,7 +278,9 @@ main{
 	.about{
 		position: relative;
 		background-color: @white;
-		p,h1,h2,h3{
+		padding-top: 75px;
+		padding-bottom: 0px;
+		p,h1,h2,h3,h4{
 			color: @black;
 		}
 		.triangle-left{
@@ -284,6 +294,113 @@ main{
 			right: 0;
 		}	
 		.container-fluid{
+			h2{
+				margin-bottom: 75px;
+			}
+			p{
+				line-height: 1.6;
+			}
+			.skills{
+				display: flex;
+				flex-direction: column;
+				h4{
+					margin-bottom: 25px;
+				}
+				.skill{
+					display: flex;
+					flex-direction: row;
+					align-items: center;
+					height: 25px;
+					margin-bottom: 15px;
+					.title{
+						font-size: 18px;
+						font-family: @montserrat;
+						margin-right: 10px;
+						padding-top: 3px; 
+					}
+					.boxik{
+						width: 300px;
+						.progressbar{
+							height: 23px;
+							width: 95%;
+							background: @red-dark;
+							-moz-transition: all 0.5s ease-in;
+						    -webkit-transition: all 0.5s ease-in;
+						    -o-transition: all 0.5s ease-in;
+						    transition: all 0.5s ease-in;
+						}
+						.bottom-line{
+							height: 2px;
+							background: @red-light;
+						}
+						&:hover,
+						&:focus,
+						&:active{
+							.progressbar{
+								background: transparent;
+								-moz-transition: all 0.2s ease-in;
+							    -webkit-transition: all 0.2s ease-in;
+							    -o-transition: all 0.2s ease-in;
+							    transition: all 0.2s ease-in;
+								&:before{
+									content: "95%";
+									font-size: 16px;
+									font-family: @open-sans;
+									color: @red-dark;
+								}
+							}
+						}
+					}
+					&.r{
+						.boxik{
+							.progressbar{
+								width: 70%;
+							}
+							&:hover,
+							&:focus,
+							&:active{
+								.progressbar{
+									&:before{
+										content: "70%";
+									}
+								}
+							}
+						}
+					}
+					&.js{
+						.boxik{
+							.progressbar{
+								width: 80%;
+							}
+							&:hover,
+							&:focus,
+							&:active{
+								.progressbar{
+									&:before{
+										content: "80%";
+									}
+								}
+							}
+						}
+					}
+					&.wd{
+						.boxik{
+							.progressbar{
+								width: 90%;
+							}
+							&:hover,
+							&:focus,
+							&:active{
+								.progressbar{
+									&:before{
+										content: "90%";
+									}
+								}
+							}
+						}
+					}
+				}
+			}
 		}
 		.triangle-right{
 			width: 100%;
@@ -307,7 +424,8 @@ main{
 	.work{
 		background: @blue-dark;
 		position: relative;
-		padding-bottom: 45px;
+		padding-bottom: 75px;
+		padding-top: 75px;
 		.triangle-left{
 			width: 100%;
 			height: 0;
@@ -320,7 +438,7 @@ main{
 		}	
 		.container-fluid{
 			h2{
-				margin-bottom: 55px;
+				margin-bottom: 75px;
 			}
 			.box{
 				background: @white;
@@ -399,6 +517,7 @@ main{
 		p{
 			color: @black;
 			margin-bottom: 30px;
+			line-height: 1.6;
 		}
 		.input-form{
 			margin-top: 45px;

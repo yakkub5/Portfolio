@@ -50,6 +50,12 @@ img {
   padding: 0px;
   margin: 0px;
 }
+button {
+  -moz-transition: all 0.5s ease-in;
+  -webkit-transition: all 0.5s ease-in;
+  -o-transition: all 0.5s ease-in;
+  transition: all 0.5s ease-in;
+}
 .btn {
   border: none;
   border-radius: 0;
@@ -241,11 +247,14 @@ header #nav-icon.open span:nth-child(4) {
 main .about {
   position: relative;
   background-color: #ecf0f1;
+  padding-top: 75px;
+  padding-bottom: 0px;
 }
 main .about p,
 main .about h1,
 main .about h2,
-main .about h3 {
+main .about h3,
+main .about h4 {
   color: #000000;
 }
 main .about .triangle-left {
@@ -257,6 +266,89 @@ main .about .triangle-left {
   position: absolute;
   top: -170px;
   right: 0;
+}
+main .about .container-fluid h2 {
+  margin-bottom: 75px;
+}
+main .about .container-fluid p {
+  line-height: 1.6;
+}
+main .about .container-fluid .skills {
+  display: flex;
+  flex-direction: column;
+}
+main .about .container-fluid .skills h4 {
+  margin-bottom: 25px;
+}
+main .about .container-fluid .skills .skill {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 25px;
+  margin-bottom: 15px;
+}
+main .about .container-fluid .skills .skill .title {
+  font-size: 18px;
+  font-family: "Montserrat", Helvetica, sans-serif;
+  margin-right: 10px;
+  padding-top: 3px;
+}
+main .about .container-fluid .skills .skill .boxik {
+  width: 300px;
+}
+main .about .container-fluid .skills .skill .boxik .progressbar {
+  height: 23px;
+  width: 95%;
+  background: #c0392b;
+  -moz-transition: all 0.5s ease-in;
+  -webkit-transition: all 0.5s ease-in;
+  -o-transition: all 0.5s ease-in;
+  transition: all 0.5s ease-in;
+}
+main .about .container-fluid .skills .skill .boxik .bottom-line {
+  height: 2px;
+  background: #e74c3c;
+}
+main .about .container-fluid .skills .skill .boxik:hover .progressbar,
+main .about .container-fluid .skills .skill .boxik:focus .progressbar,
+main .about .container-fluid .skills .skill .boxik:active .progressbar {
+  background: transparent;
+  -moz-transition: all 0.2s ease-in;
+  -webkit-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+main .about .container-fluid .skills .skill .boxik:hover .progressbar:before,
+main .about .container-fluid .skills .skill .boxik:focus .progressbar:before,
+main .about .container-fluid .skills .skill .boxik:active .progressbar:before {
+  content: "95%";
+  font-size: 16px;
+  font-family: 'Open Sans', sans-serif;
+  color: #c0392b;
+}
+main .about .container-fluid .skills .skill.r .boxik .progressbar {
+  width: 70%;
+}
+main .about .container-fluid .skills .skill.r .boxik:hover .progressbar:before,
+main .about .container-fluid .skills .skill.r .boxik:focus .progressbar:before,
+main .about .container-fluid .skills .skill.r .boxik:active .progressbar:before {
+  content: "70%";
+}
+main .about .container-fluid .skills .skill.js .boxik .progressbar {
+  width: 80%;
+}
+main .about .container-fluid .skills .skill.js .boxik:hover .progressbar:before,
+main .about .container-fluid .skills .skill.js .boxik:focus .progressbar:before,
+main .about .container-fluid .skills .skill.js .boxik:active .progressbar:before {
+  content: "80%";
+}
+main .about .container-fluid .skills .skill.wd .boxik .progressbar {
+  width: 90%;
+}
+main .about .container-fluid .skills .skill.wd .boxik:hover .progressbar:before,
+main .about .container-fluid .skills .skill.wd .boxik:focus .progressbar:before,
+main .about .container-fluid .skills .skill.wd .boxik:active .progressbar:before {
+  content: "90%";
 }
 main .about .triangle-right {
   width: 100%;
@@ -279,7 +371,8 @@ main .transition {
 main .work {
   background: #2c3e50;
   position: relative;
-  padding-bottom: 45px;
+  padding-bottom: 75px;
+  padding-top: 75px;
 }
 main .work .triangle-left {
   width: 100%;
@@ -292,7 +385,7 @@ main .work .triangle-left {
   right: 0;
 }
 main .work .container-fluid h2 {
-  margin-bottom: 55px;
+  margin-bottom: 75px;
 }
 main .work .container-fluid .box {
   background: #ecf0f1;
@@ -368,6 +461,7 @@ main .contact h2 {
 main .contact p {
   color: #000000;
   margin-bottom: 30px;
+  line-height: 1.6;
 }
 main .contact .input-form {
   margin-top: 45px;
