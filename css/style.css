@@ -687,6 +687,10 @@ footer a .fa.fa-github:active {
   main .about .skills .skill {
     justify-content: center;
   }
+  main .transition {
+    background-attachment: inherit;
+    height: 100vh;
+  }
   main .work .container-fluid h2 {
     margin-bottom: 75px;
   }
