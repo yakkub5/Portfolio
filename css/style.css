@@ -102,14 +102,13 @@ button {
 }
 header {
   min-height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat, no-repeat;
+  background-position: center;
+  content: "";
   /* Icon */
 }
 header::after {
-  background-image: url("../img/header_2.png");
-  background-repeat: no-repeat, no-repeat;
-  background-size: cover;
-  background-position: center;
-  content: "";
   opacity: 1;
   top: 0;
   left: 0;
