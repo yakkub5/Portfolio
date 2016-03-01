@@ -165,8 +165,8 @@ header .main_heading .subheading {
   font-size: 20px;
   margin-top: 25px;
   margin-left: 25%;
-  -webkit-animation-duration: 6s;
-  animation-duration: 6s;
+  -webkit-animation-duration: 6.1s;
+  animation-duration: 6.1s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
   -webkit-animation-name: ahoj;
@@ -189,11 +189,11 @@ header .main_heading .subheading {
     -webkit-transform: rotate3d(0, 0, 1, 0deg);
     transform: rotate3d(0, 0, 1, 15deg);
   }
-  50% {
+  45% {
     -webkit-transform: rotate3d(0, 0, 1, 9deg);
     transform: rotate3d(0, 0, 1, 9deg);
   }
-  70% {
+  75% {
     -webkit-transform: rotate3d(0, 0, 1, 9deg);
     transform: rotate3d(0, 0, 1, 9deg);
   }

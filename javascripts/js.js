@@ -8,30 +8,6 @@ $(document).ready(function(){
     );
 });
 
-$(function () {
-    var header = $('header');
-    var backgrounds = [
-      'url(img/1.png)',
-      'url(img/2.png)',
-      'url(img/3.png)'];
-    var current = 0;
-
-    function nextBackground() {
-        header.css({
-            "transition": "background 1s ease-in",
-            'background-image': backgrounds[current = ++current % backgrounds.length]
-        });
-
-        setTimeout(nextBackground, 6000);
-    }
-    setTimeout(nextBackground, 6000);
-    header.css({
-        "transition": "background 1s ease-in",
-        "background-image": backgrounds[0]
-    });
-});
-
-
 (function($) {
     $.fn.clickToggle = function(func1, func2) {
         var funcs = [func1, func2];
@@ -47,6 +23,31 @@ $(function () {
 }(jQuery));
 
 
+$(function () {
+    var header = $('header');
+    var backgrounds = [
+      'url(img/1.png)',
+      'url(img/2.png)',
+      'url(img/3.png)'];
+    var current = 0;
+
+    function nextBackground() {
+        header.css({
+            "transition": "background 1s ease-in",
+            "-moz-transition:": "background 1s ease-in",
+            'background-image': backgrounds[current = ++current % backgrounds.length]
+        });
+
+        setTimeout(nextBackground, 6000);
+    }
+    setTimeout(nextBackground, 6200);
+    header.css({
+        "transition": "background 1s ease-in",
+        "-moz-transition:": "background 1s ease-in",
+        "background-image": backgrounds[0]
+    });
+});
+
 $('#nav-icon, .overlay li a').clickToggle(function() {   
     $("#nav-icon").addClass("open");
     $(".overlay").show();
@@ -56,7 +57,7 @@ $('#nav-icon, .overlay li a').clickToggle(function() {
 function() {
     $("#nav-icon").removeClass("open");
     $(".overlay").removeClass("animated fadeIn");
-    $(".overlay").addClass("animated fadeOut");
+    $(".overlay").fadeOut();
 });
 
 $(function() {
