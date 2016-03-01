@@ -165,14 +165,42 @@ header .main_heading .subheading {
   font-size: 20px;
   margin-top: 25px;
   margin-left: 25%;
-  -webkit-transform: rotate(-15deg);
-  -moz-transform: rotate(-15deg);
-  -o-transform: rotate(-15deg);
-  transform: rotate(-15deg);
-  -webkit-transition: 0.5s ease-in-out;
-  -moz-transition: 0.5s ease-in-out;
-  -o-transition: 0.5s ease-in-out;
-  transition: 0.5s ease-in-out;
+  -webkit-animation-duration: 6s;
+  animation-duration: 6s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-name: ahoj;
+  animation-name: ahoj;
+  -webkit-transform-origin: center bottom;
+  transform-origin: center bottom;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+@keyframes ahoj {
+  from {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+  0% {
+    -webkit-transform: rotate3d(0, 0, 1, -15deg);
+    transform: rotate3d(0, 0, 1, -15deg);
+  }
+  25% {
+    -webkit-transform: rotate3d(0, 0, 1, 0deg);
+    transform: rotate3d(0, 0, 1, 15deg);
+  }
+  50% {
+    -webkit-transform: rotate3d(0, 0, 1, 9deg);
+    transform: rotate3d(0, 0, 1, 9deg);
+  }
+  70% {
+    -webkit-transform: rotate3d(0, 0, 1, 9deg);
+    transform: rotate3d(0, 0, 1, 9deg);
+  }
+  100% {
+    -webkit-transform: rotate3d(0, 0, 1, -15deg);
+    transform: rotate3d(0, 0, 1, -15deg);
+  }
 }
 header .navbar-brand img {
   z-index: 100;
@@ -509,7 +537,7 @@ footer a {
 footer a:hover,
 footer a:focus,
 footer a:active {
-  color: #cfd9db;
+  color: #cccccc;
   text-decoration: none;
 }
 footer a .fa {
@@ -519,42 +547,17 @@ footer a .fa {
 footer a .fa.fa-twitter {
   bottom: 40px;
 }
-footer a .fa.fa-twitter:hover,
-footer a .fa.fa-twitter:focus,
-footer a .fa.fa-twitter:active {
-  color: #55acee;
-}
 footer a .fa.fa-medium {
   bottom: 60px;
-}
-footer a .fa.fa-medium:hover,
-footer a .fa.fa-medium:focus,
-footer a .fa.fa-medium:active {
-  color: #00ab6b;
 }
 footer a .fa.fa-facebook-official {
   bottom: 100px;
 }
-footer a .fa.fa-facebook-official:hover,
-footer a .fa.fa-facebook-official:focus,
-footer a .fa.fa-facebook-official:active {
-  color: #3b5998;
-}
-footer a .fa.fa-instagram {
+footer a .fa.fa-linkedin-square {
   bottom: 80px;
-}
-footer a .fa.fa-instagram:hover,
-footer a .fa.fa-instagram:focus,
-footer a .fa.fa-instagram:active {
-  color: #0d3c5f;
 }
 footer a .fa.fa-github {
   bottom: 20px;
-}
-footer a .fa.fa-github:hover,
-footer a .fa.fa-github:focus,
-footer a .fa.fa-github:active {
-  color: #333;
 }
 /* Custom, iPhone Retina */
 /* Extra Small Devices, Phones */
@@ -767,7 +770,7 @@ footer a .fa.fa-github:active {
   footer a .fa.fa-facebook-official {
     bottom: 80px;
   }
-  footer a .fa.fa-instagram {
+  footer a .fa.fa-linkedin-square {
     bottom: 65px;
   }
   footer a .fa.fa-github {

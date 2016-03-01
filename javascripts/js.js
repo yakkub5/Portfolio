@@ -50,13 +50,13 @@ $(function () {
 $('#nav-icon, .overlay li a').clickToggle(function() {   
     $("#nav-icon").addClass("open");
     $(".overlay").show();
-    $(".overlay").removeClass("animated flipOutX");
-    $(".overlay").addClass("animated flipInX");
+    $(".overlay").removeClass("animated fadeOut");
+    $(".overlay").addClass("animated fadeIn");
 },
 function() {
     $("#nav-icon").removeClass("open");
-    $(".overlay").removeClass("animated flipInX");
-    $(".overlay").addClass("animated flipOutX");
+    $(".overlay").removeClass("animated fadeIn");
+    $(".overlay").addClass("animated fadeOut");
 });
 
 $(function() {

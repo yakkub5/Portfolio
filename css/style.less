@@ -183,14 +183,49 @@ header{
 			font-size: 20px;
 			margin-top: 25px;
 			margin-left: 25%;
-			-webkit-transform: rotate(-15deg);
-			-moz-transform: rotate(-15deg);
-			-o-transform: rotate(-15deg);
-			transform: rotate(-15deg);
-			-webkit-transition: .5s ease-in-out;
-			-moz-transition: .5s ease-in-out;
-			-o-transition: .5s ease-in-out;
-			transition: .5s ease-in-out;
+			-webkit-animation-duration: 6s;
+			animation-duration: 6s;
+			-webkit-animation-fill-mode: both;
+			animation-fill-mode: both;
+			-webkit-animation-name: ahoj;
+			animation-name: ahoj;
+			-webkit-transform-origin: center bottom;
+			transform-origin: center bottom;
+			-webkit-animation-iteration-count: infinite;
+  			animation-iteration-count: infinite;
+		}
+		@keyframes ahoj {
+		  from {
+		    -webkit-transform: translate3d(0, 0, 0);
+		    transform: translate3d(0, 0, 0);
+		  }
+		  0% {
+		    -webkit-transform: rotate3d(0, 0, 1, -15deg);
+		    transform: rotate3d(0, 0, 1, -15deg);
+		  }
+		  25% {
+		    -webkit-transform: rotate3d(0, 0, 1, 0deg);
+		    transform: rotate3d(0, 0, 1, 15deg);
+		  }
+
+		  50% {
+		    -webkit-transform: rotate3d(0, 0, 1, 9deg);
+		    transform: rotate3d(0, 0, 1, 9deg);
+		  }
+
+		  70% {
+		    -webkit-transform: rotate3d(0, 0, 1, 9deg);
+		    transform: rotate3d(0, 0, 1, 9deg);
+		  }
+		
+		  // 90% {
+		  //   -webkit-transform: rotate3d(0, 0, 1, -5deg);
+		  //   transform: rotate3d(0, 0, 1, -5deg);
+		  // }
+		  100% {
+		    -webkit-transform: rotate3d(0, 0, 1, -15deg);
+		    transform: rotate3d(0, 0, 1, -15deg);
+		  }
 		}
 	}
 	.navbar-brand img{
@@ -564,7 +599,7 @@ footer{
 		&:hover,
 		&:focus,
 		&:active{
-			color: darken(@white, 10%);
+			color: darken(#fff, 20%);
 			text-decoration: none;
 		}
 		.fa{
@@ -572,43 +607,18 @@ footer{
 			position: absolute;
 			&.fa-twitter{
 				bottom: 40px;
-				&:hover,
-				&:focus,
-				&:active{
-					color: #55acee;
-				}
 			}
 			&.fa-medium{
 				bottom: 60px;
-				&:hover,
-				&:focus,
-				&:active{
-					color: #00ab6b;
-				}
 			}
 			&.fa-facebook-official{
 				bottom: 100px;
-				&:hover,
-				&:focus,
-				&:active{
-					color: #3b5998;
-				}
 			}
-			&.fa-instagram{
+			&.fa-linkedin-square{
 				bottom: 80px;
-				&:hover,
-				&:focus,
-				&:active{
-					color: #0d3c5f;
-				}
 			}
 			&.fa-github{
 				bottom: 20px;
-				&:hover,
-				&:focus,
-				&:active{
-					color: #333;
-				}
 			}
 		}
 	}
@@ -949,7 +959,7 @@ footer{
 				bottom: 80px;
 				
 			}
-			&.fa-instagram{
+			&.fa-linkedin-square{
 				bottom: 65px;
 				
 			}
