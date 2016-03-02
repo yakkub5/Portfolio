@@ -315,6 +315,10 @@ main .about .container-fluid h2 {
 main .about .container-fluid p {
   line-height: 1.6;
 }
+main .about .container-fluid .expirience .cv a {
+  font-size: 20px;
+  color: #2196F3;
+}
 main .about .container-fluid .expirience .job:first-of-type {
   margin-top: 75px;
 }
@@ -367,6 +371,9 @@ main .about .container-fluid .expirience .job .right .dot-2 {
 main .about .container-fluid .expirience .job .right .title {
   font-size: 20px;
   font-family: "Montserrat", Helvetica, sans-serif;
+}
+main .about .container-fluid .expirience .job .right .title a {
+  color: #2196F3;
 }
 main .about .container-fluid .expirience .job .right .job-description {
   font-size: 16px;
@@ -837,7 +844,10 @@ footer a .fa.fa-github {
   footer .icons {
     margin-top: 15px;
     margin-bottom: 25px;
-    margin-left: 20px;
+    margin-left: -30px;
+  }
+  footer .col-xs-2 {
+    width: 20%;
   }
   footer a .fa {
     font-size: 45px;
