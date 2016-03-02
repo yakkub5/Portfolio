@@ -15,6 +15,20 @@ body{
 	&.disable-scrool{
 		overflow: hidden;
 	}
+	&.start{
+		&:before{
+			background-color: @orange;
+			background-position: center;
+			content: "";
+			opacity: 1;
+			top: 0;
+			left: 0;
+			bottom: 0;
+			right: 0;
+			position: absolute;
+			z-index: 1000;
+		}
+	}
 }
 
 h1,

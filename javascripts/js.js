@@ -1,3 +1,6 @@
+setTimeout(function(){ $('body').removeClass("start") }, 700);
+
+
 $(document).ready(function(){
     $( ".box" ).hover(function() {
         $(this).addClass("infinite pulse");
