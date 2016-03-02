@@ -804,6 +804,7 @@ footer a .fa.fa-github {
     position: absolute;
   }
   header {
+    min-height: 90vh;
     padding: 0px 15px;
   }
   header .main_heading h1 {
