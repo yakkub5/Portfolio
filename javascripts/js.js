@@ -40,7 +40,7 @@ $(function () {
 
         setTimeout(nextBackground, 6000);
     }
-    setTimeout(nextBackground, 6200);
+    setTimeout(nextBackground, 6000);
     header.css({
         "transition": "background 1s ease-in",
         "-moz-transition:": "background 1s ease-in",
@@ -53,9 +53,11 @@ $('#nav-icon, .overlay li a').clickToggle(function() {
     $(".overlay").show();
     $(".overlay").removeClass("animated fadeOut");
     $(".overlay").addClass("animated fadeIn");
+    $("body").addClass("disable-scrool");
 },
 function() {
     $("#nav-icon").removeClass("open");
+    $("body").removeClass("disable-scrool");
     $(".overlay").removeClass("animated fadeIn");
     $(".overlay").fadeOut();
 });

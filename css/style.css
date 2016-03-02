@@ -1,3 +1,6 @@
+body.disable-scrool {
+  overflow: hidden;
+}
 h1,
 h2,
 h3,
@@ -69,7 +72,7 @@ button {
   outline: none;
 }
 .overlay {
-  background: #d35400;
+  background-color: #d35400;
   opacity: 0.9;
   bottom: 0;
   top: 0;
@@ -80,7 +83,7 @@ button {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  z-index: 2;
+  z-index: 4;
 }
 .overlay ul {
   display: flex;
@@ -165,8 +168,8 @@ header .main_heading .subheading {
   font-size: 20px;
   margin-top: 25px;
   margin-left: 25%;
-  -webkit-animation-duration: 6.1s;
-  animation-duration: 6.1s;
+  -webkit-animation-duration: 6s;
+  animation-duration: 6s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
   -webkit-animation-name: ahoj;
@@ -299,6 +302,63 @@ main .about .container-fluid h2 {
 }
 main .about .container-fluid p {
   line-height: 1.6;
+}
+main .about .container-fluid .expirience .job:first-of-type {
+  margin-top: 75px;
+}
+main .about .container-fluid .expirience .job:last-of-type {
+  margin-bottom: 75px;
+}
+main .about .container-fluid .expirience .job .left {
+  min-height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+main .about .container-fluid .expirience .job .left p {
+  font-size: 14px;
+  font-weight: 700;
+  margin: 0px;
+  margin-right: 10px;
+}
+main .about .container-fluid .expirience .job .right {
+  border-left: 2px solid #2c3e50;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+main .about .container-fluid .expirience .job .right.first {
+  height: 350px;
+}
+main .about .container-fluid .expirience .job .right.second {
+  height: 150px;
+}
+main .about .container-fluid .expirience .job .right .dot-1 {
+  height: 25px;
+  width: 25px;
+  background: #2c3e50;
+  border-radius: 100px;
+  position: absolute;
+  left: -13px;
+  top: 0;
+}
+main .about .container-fluid .expirience .job .right .dot-2 {
+  height: 25px;
+  width: 25px;
+  background: #2c3e50;
+  border-radius: 100px;
+  position: absolute;
+  left: -13px;
+  bottom: 0px;
+}
+main .about .container-fluid .expirience .job .right .title {
+  font-size: 20px;
+  font-family: "Montserrat", Helvetica, sans-serif;
+}
+main .about .container-fluid .expirience .job .right .job-description {
+  font-size: 16px;
+  font-family: 'Open Sans', sans-serif;
 }
 main .about .container-fluid .skills {
   display: flex;
@@ -651,6 +711,9 @@ footer a .fa.fa-github {
   main .about .skills .skill {
     justify-content: center;
   }
+  main .about .container-fluid .expirience .job .left {
+    display: none;
+  }
   main .work .container-fluid h2 {
     margin-bottom: 75px;
   }
@@ -688,6 +751,12 @@ footer a .fa.fa-github {
   }
   main .about .skills .skill {
     justify-content: center;
+  }
+  main .about .container-fluid .expirience .job .right .title {
+    font-size: 18px;
+  }
+  main .about .container-fluid .expirience .job .right .job-description {
+    font-size: 14px;
   }
   main .transition {
     background-attachment: inherit;

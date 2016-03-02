@@ -11,6 +11,12 @@
 @red-dark: #c0392b;
 
 
+body{
+	&.disable-scrool{
+		overflow: hidden;
+	}
+}
+
 h1,
 h2,
 h3,
@@ -87,7 +93,7 @@ button{
 }
 
 .overlay{
-	background: @orange;
+	background-color: @orange;
 	opacity: 0.9;
 	bottom: 0;
 	top: 0;
@@ -98,7 +104,7 @@ button{
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	z-index: 2;
+	z-index: 4;
 	ul{
 		display: flex;
 		flex-direction: column;
@@ -183,8 +189,8 @@ header{
 			font-size: 20px;
 			margin-top: 25px;
 			margin-left: 25%;
-			-webkit-animation-duration: 6.1s;
-			animation-duration: 6.1s;
+			-webkit-animation-duration: 6s;
+			animation-duration: 6s;
 			-webkit-animation-fill-mode: both;
 			animation-fill-mode: both;
 			-webkit-animation-name: ahoj;
@@ -332,6 +338,68 @@ main{
 			}
 			p{
 				line-height: 1.6;
+			}
+			.expirience{
+				.job{
+					&:first-of-type{
+						margin-top: 75px;
+					}
+					&:last-of-type{
+						margin-bottom: 75px;
+					}
+					.left{
+						min-height: 150px;
+						display: flex;
+						flex-direction: column;
+						justify-content: space-between;
+						p{
+							font-size: 14px;
+							font-weight: 700;
+							margin: 0px;
+							margin-right: 10px;
+						}
+					}
+					.right{
+						border-left: 2px solid @blue-dark;
+						position: relative;
+						display: flex;
+						align-items: center;
+						justify-content: center;
+						&.first{
+							height: 350px;
+						}
+						&.second{
+							height: 150px;
+						}
+						.dot-1{
+							height: 25px;
+							width: 25px;
+							background: @blue-dark;
+							border-radius: 100px;
+							position: absolute;
+							left: -13px;
+							top: 0;
+						}
+						.dot-2{
+							height: 25px;
+							width: 25px;
+							background: @blue-dark;
+							border-radius: 100px;
+							position: absolute;
+							left: -13px;
+							bottom: 0px;
+						}
+						.title{
+							font-size: 20px;
+
+							font-family: @montserrat;
+						}
+						.job-description{
+							font-size: 16px;
+							font-family: @open-sans;
+						}
+					}
+				}
 			}
 			.skills{
 				display: flex;
@@ -787,6 +855,16 @@ main{
 				justify-content:center;
 			}
 		}
+		.container-fluid{
+			.expirience{
+				.job{
+					.left{
+						display: none;
+					}
+				}
+			}
+		}
+
 	}
 	.work{
 		.container-fluid{
@@ -844,6 +922,20 @@ main{
 		.skills{
 			.skill{
 				justify-content:center;
+			}
+		}
+		.container-fluid{
+			.expirience{
+				.job{
+					.right{
+						.title{
+							font-size: 18px;
+						}
+						.job-description{
+							font-size: 14px;
+						}
+					}
+				}
 			}
 		}
 	}
