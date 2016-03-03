@@ -13,6 +13,9 @@ body.start:before {
   position: absolute;
   z-index: 1000;
 }
+body img.hidden {
+  display: none;
+}
 h1,
 h2,
 h3,
@@ -105,8 +108,8 @@ button {
   list-style-type: none;
 }
 .overlay ul a {
-  font-size: 48px;
-  line-height: 1.7;
+  font-size: 44px;
+  line-height: 1.8;
   color: #ecf0f1;
 }
 .overlay ul a:focus {
@@ -317,7 +320,7 @@ main .about .container-fluid p {
 }
 main .about .container-fluid .expirience .cv a {
   font-size: 20px;
-  color: #2196F3;
+  color: #337ab7;
 }
 main .about .container-fluid .expirience .job:first-of-type {
   margin-top: 75px;
@@ -373,7 +376,7 @@ main .about .container-fluid .expirience .job .right .title {
   font-family: "Montserrat", Helvetica, sans-serif;
 }
 main .about .container-fluid .expirience .job .right .title a {
-  color: #2196F3;
+  color: #337ab7;
 }
 main .about .container-fluid .expirience .job .right .job-description {
   font-size: 16px;
@@ -385,6 +388,15 @@ main .about .container-fluid .skills {
 }
 main .about .container-fluid .skills h4 {
   margin-bottom: 25px;
+}
+main .about .container-fluid .skills .col-offset-2 {
+  margin-left: 20%;
+}
+main .about .container-fluid .skills .col-offset-4 {
+  margin-left: 40%;
+}
+main .about .container-fluid .skills .col-offset-6 {
+  margin-left: 60%;
 }
 main .about .container-fluid .skills .skill {
   display: flex;
@@ -405,7 +417,7 @@ main .about .container-fluid .skills .skill .boxik {
 main .about .container-fluid .skills .skill .boxik .progressbar {
   height: 23px;
   width: 95%;
-  background: #c0392b;
+  background: #d35400;
   -moz-transition: all 0.5s ease-in;
   -webkit-transition: all 0.5s ease-in;
   -o-transition: all 0.5s ease-in;
@@ -413,7 +425,7 @@ main .about .container-fluid .skills .skill .boxik .progressbar {
 }
 main .about .container-fluid .skills .skill .boxik .bottom-line {
   height: 2px;
-  background: #e74c3c;
+  background: #d35400;
 }
 main .about .container-fluid .skills .skill .boxik:hover .progressbar,
 main .about .container-fluid .skills .skill .boxik:focus .progressbar,
@@ -430,7 +442,7 @@ main .about .container-fluid .skills .skill .boxik:active .progressbar:before {
   content: "95%";
   font-size: 16px;
   font-family: 'Open Sans', sans-serif;
-  color: #c0392b;
+  color: #d35400;
 }
 main .about .container-fluid .skills .skill.r .boxik .progressbar {
   width: 70%;
@@ -768,7 +780,16 @@ footer a .fa.fa-github {
   main .about {
     padding-top: 45px;
   }
-  main .about .skills .skill {
+  main .about .container-fluid .skills .col-offset-2 {
+    margin-left: 0%;
+  }
+  main .about .container-fluid .skills .col-offset-4 {
+    margin-left: 0%;
+  }
+  main .about .container-fluid .skills .col-offset-6 {
+    margin-left: 0%;
+  }
+  main .about .container-fluid .skills .skill {
     justify-content: center;
   }
   main .about .container-fluid .expirience .job .right .title {
